@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private GameObject _enemyPrefab;
+    [SerializeField] private Mover _enemyPrefab;
     [SerializeField] private Transform[] _spawnPoints;
 
     private void Start()
@@ -14,13 +14,12 @@ public class Spawner : MonoBehaviour
     private IEnumerator SpawnMobs()
     {
         WaitForSeconds _waitForTwoSecond = new WaitForSeconds(2f);
-        GameObject enemy;
+        bool isWorking = true;
 
-        while (true)
+        while (isWorking)
         {
-            enemy = Instantiate(_enemyPrefab);
-            enemy.transform.position =_spawnPoints[Random.Range(0, _spawnPoints.Length)].position;
-            enemy.transform.Rotate(0,Random.Range(0,360),Random.Range(0,90));
+            Quaternion rotation = Quaternion.Euler(0f, Random.Range(0f, 360f), Random.Range(0f, 360f));
+            Instantiate(_enemyPrefab, _spawnPoints[Random.Range(0, _spawnPoints.Length)].position, rotation);
 
             yield return _waitForTwoSecond;
         }
