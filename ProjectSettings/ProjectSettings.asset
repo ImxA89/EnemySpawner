@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 64e8f5f7219186b418330c32ab7058d7
+  productGUID: 605eaa2f82a9dd4488f661c705cf1043
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Enemy Generation
+  productName: Enemy Generation2
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -673,14 +673,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Enemy Generation
+  metroPackageName: Enemy Generation2
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Enemy Generation
+  metroApplicationDescription: Enemy Generation2
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -749,10 +749,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: e584ee57-cb30-4c66-82f4-9b79671be550
+  cloudProjectId: 4bc97ed9-bf79-48b2-b256-a3af8990de45
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Enemy Generation
+  projectName: Enemy Generation2
   organizationId: laalex
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

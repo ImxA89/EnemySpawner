@@ -1,27 +1,13 @@
-using System.Collections;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private Mover _enemyPrefab;
-    [SerializeField] private Transform[] _spawnPoints;
+    [SerializeField] private Enemy _enemyPrefab;
+    [SerializeField] private Transform _target;
 
-    private void Start()
+    public void CreatEnemy()
     {
-        StartCoroutine(SpawnMobs());
-    }
-
-    private IEnumerator SpawnMobs()
-    {
-        WaitForSeconds _waitForTwoSecond = new WaitForSeconds(2f);
-        bool isWorking = true;
-
-        while (isWorking)
-        {
-            Quaternion rotation = Quaternion.Euler(0f, Random.Range(0f, 360f), Random.Range(0f, 360f));
-            Instantiate(_enemyPrefab, _spawnPoints[Random.Range(0, _spawnPoints.Length)].position, rotation);
-
-            yield return _waitForTwoSecond;
-        }
+        Enemy enemy = Instantiate(_enemyPrefab,transform.position, Quaternion.identity);
+        enemy.TakeTarget(_target);
     }
 }
